@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="197dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="48dp"
+        android:hint="İyi Şanslar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+
+        android:id="@+id/kartlar"
+        android:layout_width="363dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="164dp"
+        app:columnCount="4"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:rowCount="4">
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/Skor"
+        android:layout_width="265dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/kartlar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kartlar"
+        app:layout_constraintTop_toBottomOf="@+id/kartlar" />
+
+    <TextView
+        android:id="@+id/Hata"
+        android:layout_width="259dp"
+        android:layout_height="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/Skor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Skor"
+        app:layout_constraintTop_toBottomOf="@+id/Skor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
